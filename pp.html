@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Quarshie | Software Developer</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #eaeaea;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Header Section */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+            background: #111;
+            border-bottom: 2px solid #444;
+        }
+
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .header h3 {
+            font-size: 24px;
+            font-weight: 300;
+            color: #cccccc;
+        }
+
+        /* Experience Section */
+        .experience {
+            padding: 50px 20px;
+            text-align: center;
+            background: #222;
+        }
+
+        .experience h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .experience .specializations {
+            display: inline-block;
+            padding: 30px;
+            border-radius: 20px;
+            background: linear-gradient(45deg, #333, #444);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            color: #ddd;
+            max-width: 500px;
+        }
+
+        .experience .specializations ul {
+            list-style: disc;
+            list-style-position: inside;
+            padding: 0;
+            margin: 0;
+        }
+
+        .experience .specializations ul li {
+            margin: 10px 0;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .experience .specializations ul li:hover {
+            color: #fff;
+        }
+
+        /* Social Media Section */
+        .social-media {
+            padding: 50px 20px;
+            text-align: center;
+            background: #111;
+        }
+
+        .social-media h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .social-media .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .social-media .social-button {
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            background: linear-gradient(45deg, #000, #333);
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .social-media .social-button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #333, #555);
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #222;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            color: #eaeaea;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #bbbbbb;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header img {
+                margin: 0 0 20px 0;
+            }
+
+            .experience .specializations {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .social-media .social-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <img src="https://via.placeholder.com/120" alt="Emmanuel Quarshie"> <!-- Replace with your image URL -->
+        <div>
+            <h1>Emmanuel Quarshie</h1>
+            <h3>Software Developer</h3>
+        </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="experience">
+        <h2>Experience & Specializations</h2>
+        <div class="specializations">
+            <ul>
+                <li>React.js</li>
+                <li>React Native</li>
+                <li>Node.js</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="social-media">
+        <h2>Connect with Me</h2>
+        <div class="social-buttons">
+            <a href="https://github.com/yourusername" class="social-button" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourlinkedin" class="social-button" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/yourtwitter" class="social-button" target="_blank">Twitter</a>
+            <a href="https://instagram.com/yourinstagram" class="social-button" target="_blank">Instagram</a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Emmanuel Quarshie</p>
+    </footer>
+</body>
+</html>
