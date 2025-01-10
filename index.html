@@ -3,37 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>My Portfolio</title>
     <style>
-        #headtext { 
-            color: black;
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111111;
+            color: #eaeaea;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* General Container */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background: #111;
+            border-bottom: 2px solid #444;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            letter-spacing: 2px;
+        }
+
+        /* Experience Section */
+        .experience {
+            background: #333;
+            padding: 50px 0;
+            border-bottom: 2px solid #444;
+            text-align: center;
+        }
+
+        .experience h2 {
+            font-size: 36px;
+        }
+
+        .experience ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .experience ul li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #ddd;
+        }
+
+        /* GitHub and Social Media Section */
+        .social-media {
+            padding: 50px 0;
+            text-align: center;
+            background: #222;
+        }
+
+        .social-media h2 {
+            font-size: 36px;
+        }
+
+        .social-media a {
+            display: inline-block;
+            margin: 10px 20px;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            background: #444;
+        }
+
+        .social-media a:hover {
+            background: #555;
+            transform: scale(1.1);
+        }
+
+        /* Glossy Effect on buttons */
+        .glossy-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 25px;
+            font-size: 18px;
+            background: linear-gradient(45deg, #0e0e0e, #1d1d1d);
+            color: #fff;
+            border: 1px solid #444;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .glossy-btn:hover {
+            background: linear-gradient(45deg, #1d1d1d, #0e0e0e);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 36px;
+            }
+
+            .experience h2 {
+                font-size: 28px;
+            }
+
+            .social-media h2 {
+                font-size: 28px;
+            }
+
+            .social-media a {
+                font-size: 18px;
+                padding: 8px;
+            }
         }
     </style>
 </head>
 <body>
-  
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <div class="container" id="headtext">
-        <div class="row">
-            <div class="col-md-8 col-lg-6 mx-auto mt-5">
-                <div class="p-4 border rounded bg-light">
-                    <h2 class="text-center">Emmanuel Quarshie</h2>
-                    <h3 class="text-center">Software Dev</h3>
-                    <p class="text-center"></p>
-                </div>
-            </div>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Full Stack Developer | React.js | Node.js | Tailwind CSS</p>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="experience">
+            <h2>Experience & Specializations</h2>
+            <ul>
+                <li>Full Stack Development</li>
+                <li>Specialization in React.js for Frontend Development</li>
+                <li>Expert in Tailwind CSS for Custom UI Design</li>
+                <li>Backend Development with Node.js and Express</li>
+                <li>Database Integration with MongoDB & MySQL</li>
+                <li>Version Control using Git & GitHub</li>
+            </ul>
+        </div>
+
+        <!-- GitHub and Social Media Section -->
+        <div class="social-media">
+            <h2>Connect with Me</h2>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/yourinstagram" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/yourfacebook" target="_blank">Facebook</a>
+        </div>
+
+        <!-- Glossy Call to Action Button -->
+        <div style="text-align: center;">
+            <a href="https://github.com/yourusername" class="glossy-btn" target="_blank">View My Projects</a>
         </div>
     </div>
-    <div class="container text-center">
-        <img src="pp.jpg" alt="profile-picture" class="img-fluid circle" width="15px" height="50px">
-    </div>
 
-    <!-- Bootstrap and jQuery JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
